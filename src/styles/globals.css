@@ -4,12 +4,31 @@
 
 @font-face {
     font-family: "Avant Garde";
-    font-weight: 600;
-    src:url("/assets/fonts/ITCAvantGardeStd-BkObl.otf") format("opentype")
+    font-weight: 500;
+    src:url("/assets/fonts/ITCAvantGardeStd-BoldObl.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "Avant Garde";
+    font-weight: 500;
+    src:url("/assets/fonts/ITCAvantGardeStd-BoldCnObl.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "Avant Garde";
+    font-weight: 500;
+    src:url("/assets/fonts/ITCAvantGardeStd-DemiObl.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "Avant Garde";
+    font-weight: 500;
+    src:url("/public/assets/fonts/") format("opentype")
 }
 
 body, html {
-    scroll-behavior: unset;
+    @apply font-primary;
+    scroll-behavior: smooth;
     overscroll-behavior-y: none;
 }
 
@@ -22,5 +41,10 @@ body, html {
 body {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+
+}
+
+.container {
+    @apply mx-auto max-w-[1600px];
 
 }

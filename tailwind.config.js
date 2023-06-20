@@ -10,7 +10,10 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: ["Avant Garde", "sans-serif"],
-        avantGarde: {100: ["Avant Garde", "sans-serif"]}
+        avantGarde: {100: ["Avant Garde", "sans-serif"]},
+
+        secondary: ["Poly Sans", "sans-serif"],
+        polySans: { 100: ["Poly Sans medium", "sans-serif"] },
       }
     },
   },

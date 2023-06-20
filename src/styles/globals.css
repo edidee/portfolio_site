@@ -3,15 +3,9 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Avant Garde";
+    font-family: "Avant Garde bold";
     font-weight: 500;
     src:url("/assets/fonts/ITCAvantGardeStd-BoldObl.otf") format("opentype")
-}
-
-@font-face {
-    font-family: "Avant Garde";
-    font-weight: 500;
-    src:url("/assets/fonts/ITCAvantGardeStd-BoldCnObl.otf") format("opentype")
 }
 
 @font-face {
@@ -20,14 +14,27 @@
     src:url("/assets/fonts/ITCAvantGardeStd-DemiObl.otf") format("opentype")
 }
 
+
 @font-face {
-    font-family: "Avant Garde";
-    font-weight: 500;
-    src:url("/public/assets/fonts/") format("opentype")
-}
+    font-family: "Poly Sans thick";
+    font-weight: 600;
+    src:url("/assets/fonts/PolySans-Bulky-Wide.ttf")
+  } 
+  
+  @font-face {
+    font-family: "Poly Sans";
+    font-weight: 400;
+    src:url("/assets/fonts/PolySans-Neutral.ttf")
+  }
+  
+  @font-face {
+    font-family: "Poly Sans medium";
+    font-weight: 300;
+    src:url("/assets/fonts/PolySans-Median.ttf")
+  }
 
 body, html {
-    @apply font-primary;
+    @apply font-secondary;
     scroll-behavior: smooth;
     overscroll-behavior-y: none;
 }

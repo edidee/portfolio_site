@@ -1,7 +1,14 @@
 import React from "react";
 import Link from "next/link";
+import { LuMousePointerClick } from "react-icons/lu";
+interface ArticleProps {
+  title: string;
+  description: string;
+  href: string;
+  language: string;
+}
 
-const articles = [
+const articles: ArticleProps[] = [
   {
     title: "Routing in React",
     description: "Learn how to route pages in React",
@@ -32,18 +39,24 @@ export const Blog = () => {
   return (
     <section
       id="blog"
-      className="container bg-black h-screen w-full text-white p-10 "
+      className="container bg-black lg:h-screen w-full text-white p-10 "
     >
       <p className="text-sm md:text-lg tracking-[0.4em] uppercase">
         I&apos;ve written about
       </p>
       <div className="grid lg:grid-cols-2 gap-4 lg:gap-8 mt-5">
         {articles.map(({ description, href, title, language }) => (
-          <div key={href} className=" bg-white text-black  p-12 hover:shadow-xl col-span-1">
+          <div
+            key={href}
+            className=" bg-white text-black p-12 col-span-1 transition md:group-hover:opacity-50 md:hover:scale-[1.04] hover:shadow-[0 26px 49px rgba(0,0,0,.08)] md:hover:opacity"
+          >
             <Link href={href}>
-              <p className="">{language}</p>
+              <p className="text-gray-400">{language}</p>
               <p className="font-bold text-4xl my-2">{title}</p>
-              <p>{description}</p>
+              <div className="flex items-center space-x-4">
+                <p>{description}</p>
+                <LuMousePointerClick />
+              </div>
             </Link>
           </div>
         ))}

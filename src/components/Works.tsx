@@ -44,7 +44,7 @@ export const Works = () => {
   return (
     <section
       id="works"
-      className="container bg-black lg:h-screen w-full text-white px-20 py-10 "
+      className="container bg-black lg:h-screen w-full text-white p-10 "
     >
       <p className="text-sm md:text-lg tracking-[0.4em] uppercase">
         What I&apos;ve done
@@ -53,13 +53,13 @@ export const Works = () => {
         {works.map(({ href, imageUrl, description, title }, index) => (
           <div
             key={index}
-            className={clsx("w-[500px] lg:h-96 px-6 py-6 rounded-xl bg-white")}
+            className={clsx("w-[350px] lg:h- px-6 py-6 rounded-xl bg-white")}
           >
-              <Link href={href} className="mx-auto">
+              <Link href={href} target="_blank" className="mx-auto">
             <div className="w-full mx-auto">
-                <Image src={imageUrl} alt="works" width={500} height={500} />
+                <Image src={imageUrl} alt="works" width={500} height={500} className="object-contain"/>
             </div>
-            <div className="mt-4">
+            <div className="mt-6">
               <p className="font-bold text-black text-lg">{title}</p>
               <p className="text-black text-sm">{description}</p>
             </div>

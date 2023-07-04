@@ -42,16 +42,16 @@ export const Contact = () => {
           {socials.map(({ href, title }) => (
             <div key={title} className="flex items-center space-x-5 w-6/12">
               <BsBoxArrowDownRight className="text-[#eb5939]" />
-              <Link href={href} className="text-xl font-bold">
+              <Link href={href} className="text-xl">
                 {title}
               </Link>
             </div>
           ))}
         </div>
         <div className="mt-6 lg:mt-0">
-          <div>
+          <div className="text-xl">
             <p>Email:</p>
-            <Link href="mailto:etokedidionge@gmail.com">
+            <Link href="mailto:etokedidionge@gmail.com" className="text-lg">
               etokedidionge@gmail.com
             </Link>
           </div>

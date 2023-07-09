@@ -6,13 +6,13 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="lg:h-screen px-6 text-center lg:text-left bg-black  py-10 text-white"
+      className="container lg:h-screen px-6 text-center lg:text-left bg-black  py-10 text-[#B7AB98]"
     >
       <p className="text-xs md:text-sm tracking-[0.4em] uppercase ">About Me</p>
       <p className="mt-6 text-2xl md:text-4xl lg:text-6xl font-secondary text-[#B7AB98] ">
         A <span className="">frontend developer</span> with passion
         for building user-friendly and visually appealing web applications. With{" "}
-        <span className="">2 years of experience</span>, I specialize
+        <span className="">2+ years of experience</span>, I specialize
         in creating dynamic and responsive user interfaces using{" "}
         <span className="text-[#eb5939]">React</span>,{" "}
         <span className="text-[#eb5939]">Next.js</span>,{" "}

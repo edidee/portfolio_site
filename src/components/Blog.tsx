@@ -39,7 +39,7 @@ export const Blog = () => {
   return (
     <section
       id="blog"
-      className="container bg-black lg:h-screen w-full text-white p-10 "
+      className=" bg-black w-full text-white p-10 "
     >
       <p className="text-sm md:text-lg tracking-[0.4em] uppercase">
         I&apos;ve written about

@@ -11,11 +11,19 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="">
+      <div className="block lg:hidden">
+
       <Hero />
       <About />
       <Works />
       <Blog />
       <Contact />
+      </div>
+
+      <div className="hidden lg:block">
+      <Hero />
+
+      </div>
     </main>
   );
 }

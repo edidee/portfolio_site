@@ -6,8 +6,10 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="container lg:h-screen flex flex-col justify-center items-center px-6 text-center lg:text-left bg-black  py-10 text-[#B7AB98]"
+      className="container lg:h-screen xl:h-auto flex flex-col justify-center  px-6 text-center lg:text-left bg-black  py-10 text-[#B7AB98]"
     >
+      <div className="mt-[50px] lg:mt-[90px]">
+
       <p className="text-xs md:text-sm tracking-[0.4em] uppercase">About Me</p>
       <p className="mt-6 text-2xl md:text-4xl lg:text-6xl font-secondary text-[#B7AB98] ">
         A <span className="">frontend developer</span> with passion
@@ -35,6 +37,7 @@ export const About = () => {
             Download Resume
           </Link>
         </button>
+      </div>
       </div>
     </section>
   );

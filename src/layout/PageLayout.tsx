@@ -6,37 +6,14 @@ import { ImCancelCircle } from "react-icons/im";
 import { useRouter } from "next/router";
 import clsx from "clsx";
 import { BsBoxArrowDownRight } from "react-icons/bs";
+import { Contact } from "@/components/Contact";
 
 // import {gsap } from "gsap"
 // import { ScrollSmoother } from "gsap/ScrollSmoother";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
-interface socialsProps {
-  title: string;
-  href: string;
-}
-const socials: socialsProps[] = [
-  {
-    title: "Twitter",
-    href: "https://twitter.com/EdidiongEtok",
-  },
 
-  {
-    title: "LinkedIn",
-    href: "https://www.linkedin.com/in/edidiong-etok-bb1425189",
-  },
-
-  {
-    title: "Github",
-    href: "https://github.com/edidee",
-  },
-
-  {
-    title: "Medium",
-    href: "https://medium.com/@edidee",
-  },
-];
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -59,7 +36,7 @@ export const PageLayout: React.FC<LayoutProps> = ({ children }) => {
   };
 
   return (
-    <main id="smooth-wrapper" className="container">
+    <div id="smooth-wrapper" className="container ">
       {/* mobile view */}
       <div className="block lg:hidden">
         <div className="sticky top-0 flex justify-between items-center py-2 px-6 bg-black  text-[#B7AB98]">
@@ -161,41 +138,10 @@ export const PageLayout: React.FC<LayoutProps> = ({ children }) => {
             </div>
           </div>
         </div>
-        <div className="col-span-10">{children}
-        
-        <section
-      id="contact"
-      className="container bg-black w-full text-[#B7AB98] p-10 "
-    >
-      <p className="text-sm md:text-lg tracking-[0.4em] uppercase">
-        Let&apos;s Connect
-      </p>
-
-      <div className="lg:grid lg:grid-cols-2 my-5">
-        <div className="col-span-1 md:grid md:grid-cols-2 gap-4 ">
-          {socials.map(({ href, title }) => (
-            <div key={title} className="flex items-center space-x-5 w-6/12">
-              <BsBoxArrowDownRight className="text-[#eb5939]" />
-              <Link href={href} className="text-xl">
-                {title}
-              </Link>
-            </div>
-          ))}
-        </div>
-        <div className="mt-6 lg:mt-0">
-          <div className="text-xl">
-            <p>Email:</p>
-            <Link href="mailto:etokedidionge@gmail.com" className="text-lg">
-              etokedidionge@gmail.com
-            </Link>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div className="mt-5 text-center text-gray-400 text-sm">
-        &copy; {new Date().getFullYear()} Edidiong Etok. All rights reserved
-      </div>
-    </section>
+        <div className="col-span-10">
+          {children}
+        <Contact />
+      
         </div>
 
         <div className="sticky top-0 col-span-1 bg-black text-[#B7AB98] h-screen px-4 py-12">
@@ -245,6 +191,6 @@ export const PageLayout: React.FC<LayoutProps> = ({ children }) => {
           </nav>
         </div>
       </div>
-    </main>
+    </div>
   );
 };

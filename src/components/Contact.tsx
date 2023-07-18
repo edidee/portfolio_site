@@ -31,7 +31,7 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="container bg-black w-full text-[#B7AB98] p-10 "
+      className="container bg-black w-full text-[#B7AB98] p-10 lg:mt-20"
     >
       <p className="text-sm md:text-lg tracking-[0.4em] uppercase">
         Let&apos;s Connect

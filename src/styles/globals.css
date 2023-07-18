@@ -41,17 +41,17 @@ body, html {
 
  /* Hide scrollbar for Chrome, Safari and Opera */
  body::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
-
+    @apply lg:bg-black
 }
 
 .container {
-    @apply mx-auto max-w-[1600px];
+    @apply mx-auto max-w-[1700px];
   
 }

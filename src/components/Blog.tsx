@@ -41,7 +41,9 @@ export const Blog = () => {
       id="blog"
       className=" bg-black w-full text-white p-10 "
     >
-      <p className="text-sm md:text-lg tracking-[0.4em] uppercase">
+      <div className="mt-[50px] lg:mt-[70px]">
+
+      <p className="text-xs md:text-sm tracking-[0.4em] uppercase">
         I&apos;ve written about
       </p>
       <div className="grid lg:grid-cols-2 gap-4 lg:gap-8 mt-5">
@@ -60,6 +62,7 @@ export const Blog = () => {
             </Link>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
